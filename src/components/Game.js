@@ -7,7 +7,7 @@ class Game extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			level: 12,
+			level: 0,
 			solved: false,
 			i: 0,
 			j: 0
