@@ -37,7 +37,7 @@ class LevelFiveScene extends React.Component {
 				{({ TransitionProps }) => (
 					<Fade {...TransitionProps} timeout={350}>
 						<Paper className='hint-paper'>
-							<Typography>The <b>addtion operator</b> can be used to add two numbers.</Typography>
+							<Typography>The <b>addition operator</b> can be used to add two numbers.</Typography>
 							<Typography>What is the number of the room at the end of the hall?</Typography>
 						</Paper>
 					</Fade>
