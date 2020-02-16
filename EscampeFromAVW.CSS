@@ -1,12 +1,17 @@
 h1 {
-  text-decoration: underline;
   text-align: center;
   color : red;
+  font-family: "viner hand ITC";
 }
-h2 {
-  text-decoration : underline;
+h3 {
   color : blue;
+  font-family: "viner hand ITC";
 }
 main {
   text-align: center;
+  color : white;
+  font-family: "Constantia";
+}
+html {
+  background-color: black;
 }
