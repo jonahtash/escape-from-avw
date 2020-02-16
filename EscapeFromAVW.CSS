@@ -1,0 +1,17 @@
+h1 {
+  text-align: center;
+  color : red;
+  font-family: "viner hand ITC";
+}
+h3 {
+  color : blue;
+  font-family: "viner hand ITC";
+}
+main {
+  text-align: center;
+  color : white;
+  font-family: "Constantia";
+}
+html {
+  background-color: black;
+}
