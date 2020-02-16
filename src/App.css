@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+.game-paper {
+	width: 100%;
+	height: 100vh;
+	background-color: #424242 !important;
+}
+.scene-paper {
+	width: 65%;
+	margin-top: 2em;
+	display: inline-block;
+	height: 65%;
+}
+.input-paper {
+	width: 75%;
+	display: inline-block;
+	height: 10%;
+	margin-top: 25px;
+}
