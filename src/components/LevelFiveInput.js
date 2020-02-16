@@ -13,7 +13,7 @@ class LevelFiveInput extends React.Component {
 
 	onLabelChange(e) {
 		this.setState({inputVal: e.target.value});
-		if (e.target.value.toLowerCase() == "8") {
+		if (e.target.value.toLowerCase() == "4") {
 			this.props.setSolve(true);
 		}
 	}

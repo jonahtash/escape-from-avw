@@ -23,7 +23,7 @@ class LevelOneInput extends React.Component {
 				<code>
 					door_open =
 				</code>
-				<input id="input" value={this.state.inputVal} onChange={this.onLabelChange} className="right-input" />
+				<input id="input" value={this.state.inputVal} onChange={this.onLabelChange} className="right-input" style={{'color':'#ecb9ec'}}/>
 			</div>
 		);
 	}

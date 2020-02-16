@@ -100,3 +100,23 @@
 	text-align: center;
 	font-family: 'Fira Code';
 }
+.code-area {
+	font-family: 'Fira Code';
+	font-size: 25px;
+	color: white;
+	background-color: #424242 !important;
+	outline: none !important;
+	border:none;
+	border-radius: 5px;
+	padding: 10px 15px;
+}
+.run-button{
+	margin-bottom: 20%;
+	margin-left: 15px;
+}
+.bool  {
+	color: #ecb9ec !important;
+}
+.if {
+	color: #ecb9ec !important;
+}

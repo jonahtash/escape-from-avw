@@ -1,14 +1,14 @@
 import React from 'react';
 import Paper from '@material-ui/core/Paper';
-import Door1 from '../img/keyholeMessageDoorLocked.png';
-import Door2 from '../img/keyholeMessageDoorUnlocked.png';
+import Door1 from '../img/Scale.png';
+import Door2 from '../img/ScaleBalenced.png';
 import Popper from '@material-ui/core/Popper';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import Fade from '@material-ui/core/Fade';
 
-class LevelFourScene extends React.Component {
+class LevelNineScene extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -37,8 +37,7 @@ class LevelFourScene extends React.Component {
 				{({ TransitionProps }) => (
 					<Fade {...TransitionProps} timeout={350}>
 						<Paper className='hint-paper'>
-							<Typography>Remember the variables</Typography>
-							<Typography><code><b>number_keys</b></code> <span>and</span> <code><b>password</b></code> <span>?</span></Typography>
+							<Typography>An <b>if statement</b> can control the path your program takes.</Typography>
 						</Paper>
 					</Fade>
 				)}
@@ -49,4 +48,4 @@ class LevelFourScene extends React.Component {
 	}
 }
 
-export default LevelFourScene;
+export default LevelNineScene;

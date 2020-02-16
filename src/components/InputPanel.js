@@ -6,6 +6,11 @@ import LevelThreeInput from './LevelThreeInput';
 import LevelFourInput from './LevelFourInput';
 import LevelFiveInput from './LevelFiveInput';
 import LevelSixInput from './LevelSixInput';
+import LevelSevenInput from './LevelSevenInput';
+import LevelEightInput from './LevelEightInput';
+import LevelNineInput from './LevelNineInput';
+import LevelTenInput from './LevelTenInput';
+import LevelElevenInput from './LevelElevenInput';
 
 
 class InputPanel extends React.Component {
@@ -41,6 +46,21 @@ class InputPanel extends React.Component {
 		}
 		if (this.props.level == 5) {
 			input = <LevelSixInput solved={this.props.solved} setSolve={this.props.setSolve} advance={this.props.advance} setHeight={this.setHeight}/>
+		}
+		if (this.props.level == 6) {
+			input = <LevelSevenInput solved={this.props.solved} setSolve={this.props.setSolve} advance={this.props.advance} setHeight={this.setHeight}/>
+		}
+		if (this.props.level == 7) {
+			input = <LevelEightInput solved={this.props.solved} setSolve={this.props.setSolve} advance={this.props.advance} setHeight={this.setHeight}/>
+		}
+		if (this.props.level == 8) {
+			input = <LevelNineInput solved={this.props.solved} setSolve={this.props.setSolve} advance={this.props.advance} setHeight={this.setHeight}/>
+		}
+		if (this.props.level == 9) {
+			input = <LevelTenInput solved={this.props.solved} setSolve={this.props.setSolve} advance={this.props.advance} setHeight={this.setHeight}/>
+		}
+		if (this.props.level == 10) {
+			input = <LevelElevenInput solved={this.props.solved} setSolve={this.props.setSolve} advance={this.props.advance} setHeight={this.setHeight}/>
 		}
 
 		return (

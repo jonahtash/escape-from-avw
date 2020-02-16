@@ -1,14 +1,14 @@
 import React from 'react';
 import Paper from '@material-ui/core/Paper';
-import Door1 from '../img/Door1.png';
-import Door2 from '../img/Door1_Open.png';
+import Door1 from '../img/DoorSpeakerLocked2.png';
+import Door2 from '../img/DoorSpeakerUnlocked2.png';
 import Popper from '@material-ui/core/Popper';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import Fade from '@material-ui/core/Fade';
 
-class LevelTwoScene extends React.Component {
+class LevelThreeScene extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -50,4 +50,4 @@ class LevelTwoScene extends React.Component {
 	}
 }
 
-export default LevelTwoScene;
+export default LevelThreeScene;

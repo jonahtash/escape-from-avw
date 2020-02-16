@@ -7,7 +7,7 @@ class Game extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			level: 4,
+			level: 6,
 			solved: false
 		}
 		this.setSolve = this.setSolve.bind(this);

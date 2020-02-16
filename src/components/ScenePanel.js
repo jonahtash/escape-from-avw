@@ -6,6 +6,11 @@ import LevelThreeScene from './LevelThreeScene';
 import LevelFourScene from './LevelFourScene';
 import LevelFiveScene from './LevelFiveScene';
 import LevelSixScene from './LevelSixScene';
+import LevelSevenScene from './LevelSevenScene';
+import LevelEightScene from './LevelEightScene';
+import LevelNineScene from './LevelNineScene';
+import LevelTenScene from './LevelTenScene';
+import LevelElevenScene from './LevelElevenScene';
 
 class ScenePanel extends React.Component {
 	constructor(props) {
@@ -33,6 +38,21 @@ class ScenePanel extends React.Component {
 		}
 		if (this.props.level == 5) {
 			scene = <LevelSixScene solved={this.props.solved} setSolve={this.props.setSolve} advance={this.props.advance}/>
+		}
+		if (this.props.level == 6) {
+			scene = <LevelSevenScene solved={this.props.solved} setSolve={this.props.setSolve} advance={this.props.advance}/>
+		}
+		if (this.props.level == 7) {
+			scene = <LevelEightScene solved={this.props.solved} setSolve={this.props.setSolve} advance={this.props.advance}/>
+		}
+		if (this.props.level == 8) {
+			scene = <LevelNineScene solved={this.props.solved} setSolve={this.props.setSolve} advance={this.props.advance}/>
+		}
+		if (this.props.level == 9) {
+			scene = <LevelTenScene solved={this.props.solved} setSolve={this.props.setSolve} advance={this.props.advance}/>
+		}
+		if (this.props.level == 10) {
+			scene = <LevelElevenScene solved={this.props.solved} setSolve={this.props.setSolve} advance={this.props.advance}/>
 		}
 		return (
 			<Paper className="scene-paper">
