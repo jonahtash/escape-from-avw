@@ -46,10 +46,44 @@
 	margin-top: 2em;
 	display: inline-block;
 	height: 65%;
+	background-color: #b9b9b9!important;
 }
 .input-paper {
 	width: 75%;
 	display: inline-block;
 	height: 10%;
 	margin-top: 25px;
+	background-color: #585858 !important;
+	color: white !important;
+	vertical-align: middle;
+}
+.door-image {
+	height: 85%;
+	margin-top: 10%;
+}
+.left-label {
+	display: inline-block;
+	margin-top: 1.5%;
+	font-size: 30px;
+	font-family: 'Fira Code';
+	color: #c8cec7;
+}
+.right-input {
+	color: white;
+	height: 90%;
+	background-color: #424242 !important;
+	border:none;
+	outline: none !important;
+	margin-left: 15px;
+	font-size: 30px;
+	border-radius: 5px;
+	width: 20%;
+	text-align: center;
+	font-family: 'Fira Code';
+}
+.hint-paper {
+	padding: 10px;
+	color: #c8cec7 !important;
+	background-color: #585858 !important;
+	margin-right: 5px;
 }
