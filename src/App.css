@@ -83,7 +83,20 @@
 }
 .hint-paper {
 	padding: 10px;
-	color: #c8cec7 !important;
-	background-color: #585858 !important;
+	color: #98f988 !important;
+	background-color: #504f4f !important;
 	margin-right: 5px;
+}
+.left-input{
+	color: white;
+	height: 90%;
+	background-color: #424242 !important;
+	border:none;
+	outline: none !important;
+	margin-right: 15px;
+	font-size: 30px;
+	border-radius: 5px;
+	width: 20%;
+	text-align: center;
+	font-family: 'Fira Code';
 }

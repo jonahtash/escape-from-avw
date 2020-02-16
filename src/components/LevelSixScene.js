@@ -8,7 +8,7 @@ import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import Fade from '@material-ui/core/Fade';
 
-class LevelOneScene extends React.Component {
+class LevelSixScene extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -37,8 +37,8 @@ class LevelOneScene extends React.Component {
 				{({ TransitionProps }) => (
 					<Fade {...TransitionProps} timeout={350}>
 						<Paper className='hint-paper'>
-							<Typography>This door is controlled by a <b>Boolean</b> variable</Typography>
-							<Typography><b>Boolean</b> variables can be one of two possible values: <code><b>true</b></code> <span>or</span> <code><b>false</b></code> </Typography>
+							<Typography>The <b>multiplication operator</b> can be used to multiply two numbers.</Typography>
+							<Typography>How many stairs to the bottom?</Typography>
 						</Paper>
 					</Fade>
 				)}
@@ -49,4 +49,4 @@ class LevelOneScene extends React.Component {
 	}
 }
 
-export default LevelOneScene;
+export default LevelSixScene;

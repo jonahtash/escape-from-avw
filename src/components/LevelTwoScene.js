@@ -1,14 +1,14 @@
 import React from 'react';
 import Paper from '@material-ui/core/Paper';
-import Door1 from '../img/Door1.png';
-import Door2 from '../img/Door1_Open.png';
+import Door1 from '../img/door_one_key.png';
+import Door2 from '../img/door_three_key.png';
 import Popper from '@material-ui/core/Popper';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import Fade from '@material-ui/core/Fade';
 
-class LevelOneScene extends React.Component {
+class LevelTwoScene extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -37,8 +37,8 @@ class LevelOneScene extends React.Component {
 				{({ TransitionProps }) => (
 					<Fade {...TransitionProps} timeout={350}>
 						<Paper className='hint-paper'>
-							<Typography>This door is controlled by a <b>Boolean</b> variable</Typography>
-							<Typography><b>Boolean</b> variables can be one of two possible values: <code><b>true</b></code> <span>or</span> <code><b>false</b></code> </Typography>
+							<Typography>This door is controlled by an <b>Integer</b> variable</Typography>
+							<Typography><b>Integer</b> variables can be any positive or negative whole number</Typography>
 						</Paper>
 					</Fade>
 				)}
@@ -49,4 +49,4 @@ class LevelOneScene extends React.Component {
 	}
 }
 
-export default LevelOneScene;
+export default LevelTwoScene;
