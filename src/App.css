@@ -120,3 +120,14 @@
 .if {
 	color: #ecb9ec !important;
 }
+.wordbank {
+	font-size: 25px;
+	color: #c8cec7 !important;
+	background-color: #424242 !important;
+	outline: none !important;
+	height:80%;
+	margin-left: 25px;
+	padding: 15px;
+	margin-top: 10%;
+	text-align: left;
+}

@@ -1,14 +1,14 @@
 import React from 'react';
 import Paper from '@material-ui/core/Paper';
-import Door1 from '../img/door_one_key.png';
-import Door2 from '../img/door_three_key.png';
+import Door1 from '../img/Scale.png';
+import Door2 from '../img/ScaleBalenced.png';
 import Popper from '@material-ui/core/Popper';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import Fade from '@material-ui/core/Fade';
 
-class LevelEightScene extends React.Component {
+class LevelTwelveScene extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -37,7 +37,8 @@ class LevelEightScene extends React.Component {
 				{({ TransitionProps }) => (
 					<Fade {...TransitionProps} timeout={350}>
 						<Paper className='hint-paper'>
-							<Typography>An <b>if statement</b> can control the path your program takes.</Typography>
+							<Typography><b>Functions</b> are blocks of code that can be called repeatedly.</Typography>
+							<Typography>Call a <b>function</b> by writing its name followed by a pair of parenthesis</Typography>
 						</Paper>
 					</Fade>
 				)}
@@ -48,4 +49,4 @@ class LevelEightScene extends React.Component {
 	}
 }
 
-export default LevelEightScene;
+export default LevelTwelveScene;

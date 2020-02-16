@@ -11,7 +11,8 @@ import LevelEightInput from './LevelEightInput';
 import LevelNineInput from './LevelNineInput';
 import LevelTenInput from './LevelTenInput';
 import LevelElevenInput from './LevelElevenInput';
-
+import LevelTwelveInput from './LevelTwelveInput';
+import LevelThreeteenInput from './LevelThreeteenInput';
 
 class InputPanel extends React.Component {
 	constructor(props) {
@@ -61,6 +62,12 @@ class InputPanel extends React.Component {
 		}
 		if (this.props.level == 10) {
 			input = <LevelElevenInput solved={this.props.solved} setSolve={this.props.setSolve} advance={this.props.advance} setHeight={this.setHeight}/>
+		}
+		if (this.props.level == 11) {
+			input = <LevelTwelveInput solved={this.props.solved} setSolve={this.props.setSolve} advance={this.props.advance} setHeight={this.setHeight}/>
+		}
+		if (this.props.level == 12) {
+			input = <LevelThreeteenInput solved={this.props.solved} setSolve={this.props.setSolve} advance={this.props.advance} setHeight={this.setHeight} setI={this.props.setI} setJ={this.props.setJ}/>
 		}
 
 		return (

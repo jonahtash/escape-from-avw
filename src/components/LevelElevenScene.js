@@ -1,6 +1,6 @@
 import React from 'react';
 import Paper from '@material-ui/core/Paper';
-import Door1 from '../img/Door1.png';
+import Door1 from '../img/elevator.png';
 import Door2 from '../img/Door1_Open.png';
 import Popper from '@material-ui/core/Popper';
 import Typography from '@material-ui/core/Typography';

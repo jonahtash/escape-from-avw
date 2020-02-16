@@ -11,12 +11,33 @@ import LevelEightScene from './LevelEightScene';
 import LevelNineScene from './LevelNineScene';
 import LevelTenScene from './LevelTenScene';
 import LevelElevenScene from './LevelElevenScene';
+import LevelTwelveScene from './LevelTwelveScene';
+import LevelThreeteenScene from './LevelThreeteenScene';
 
 class ScenePanel extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
+			i:0,
+			j:0
 		};
+		this.setI = this.setI.bind(this);
+		this.setJ = this.setJ.bind(this);
+		this.threeteen = React.createRef();
+	}
+
+	setI(v) {
+		if((v === parseInt(v, 10)) && v <100 && v > -100) {
+			this.threeteen.current.setI(v);
+			this.setState({i: v});
+		}
+
+	}
+	setJ(v) {
+		if((v === parseInt(v, 10))) {
+			this.threeteen.current.setJ(v);
+			this.setState({j: v});
+		}
 	}
 
 	render () {
@@ -53,6 +74,12 @@ class ScenePanel extends React.Component {
 		}
 		if (this.props.level == 10) {
 			scene = <LevelElevenScene solved={this.props.solved} setSolve={this.props.setSolve} advance={this.props.advance}/>
+		}
+		if (this.props.level == 11) {
+			scene = <LevelTwelveScene solved={this.props.solved} setSolve={this.props.setSolve} advance={this.props.advance}/>
+		}
+		if (this.props.level == 12) {
+			scene = <LevelThreeteenScene solved={this.props.solved} setSolve={this.props.setSolve} advance={this.props.advance} ref={this.threeteen} i={this.state.i} j={this.state.j}/>
 		}
 		return (
 			<Paper className="scene-paper">

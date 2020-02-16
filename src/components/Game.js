@@ -7,13 +7,30 @@ class Game extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			level: 6,
-			solved: false
+			level: 12,
+			solved: false,
+			i: 0,
+			j: 0
 		}
 		this.setSolve = this.setSolve.bind(this);
 		this.advance = this.advance.bind(this);
+		this.setI = this.setI.bind(this);
+		this.setJ = this.setJ.bind(this);
+		this.scenePanel = React.createRef()
 	}
+	setI(v) {
+		if((v === parseInt(v, 10))) {
+			this.scenePanel.current.setI(v);
+			this.setState({i: v});
+		}
 
+	}
+	setJ(v) {
+		if((v === parseInt(v, 10))) {
+			this.scenePanel.current.setJ(v);
+			this.setState({j: v});
+		}
+	}
 	setSolve(v){
 		this.setState({solved:v});
 	}
@@ -25,8 +42,8 @@ class Game extends React.Component {
 	render () {
 		return (
 			<Paper className="game-paper">
-				<ScenePanel level={this.state.level} solved={this.state.solved} setSolve={this.setSolve} advance={this.advance}/>
-				<InputPanel setSolve={this.setSolve} level={this.state.level} advance={this.advance}/>
+				<ScenePanel level={this.state.level} solved={this.state.solved} setSolve={this.setSolve} advance={this.advance} i={this.state.i} j={this.state.j} ref={this.scenePanel}/>
+				<InputPanel setSolve={this.setSolve} level={this.state.level} advance={this.advance} setI={this.setI} setJ={this.setJ}/>
 			</Paper>
 		);
 	}

@@ -30,7 +30,7 @@ class LevelSevenInput extends React.Component {
 	    return Sk.builtinFiles["files"][x];
 	}
 	runit() {
-   var prog = "nDew_ritos = 1231421\nThe_dew = 123123\n"
+   var prog = "\nDew_ritos = 1231421\nThe_dew = 123123\n"
 	 prog = prog + this.state.inputVal + "\nprint total_price";
    Sk.pre = "output";
    Sk.configure({output:this.outf, read:this.builtinRead});

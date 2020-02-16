@@ -46,9 +46,9 @@ class LevelTenInput extends React.Component {
 						<span className="if">if</span> count &lt; 4:<br />
 						<span style={{'margin-left':'2em','color':this.state.color1}}>room_number = room_number + 1</span><br />
 						<span className="if">elif count &gt; = 6</span><br />
-						<span style={{'margin-left':'2em','color':this.state.color2}}>room_number = room_number + 2</span><br />
+						<span style={{'margin-left':'2em','color':this.state.color2}}>room_number = room_number + 3</span><br />
 						<span className="if">else</span><br />
-						<span style={{'margin-left':'2em','color':this.state.color3}}>room_number = room_number + 3</span><br />
+						<span style={{'margin-left':'2em','color':this.state.color3}}>room_number = room_number + 2</span><br />
 					</code>
 				</div>
 			</div>

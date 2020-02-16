@@ -21,17 +21,14 @@ class LevelSevenInput extends React.Component {
 	}
 
 	outf(text) {
-		let answer = ["True", "", "False", "", "False", "", "True", ""];
-		let answer2 = ["True", "", "None", "", "None", "", "True", ""];
-		let solved = true;
-		this.state.outs.push(text.trim());
-		console.log(this.state.outs);
-		if (this.state.outs.length == answer.length) {
-			for (var i=0;i<answer.length;i++) {
-				solved = solved && (answer[i] == this.state.outs[i] || answer2[i] == this.state.outs[i]);
-			}
-			this.props.setSolve(solved);
+		console.log(text);
+		if (text.split(" ") && text.split(" ").length == 2) {
+			this.props.setI(parseInt(text.split(" ")[0]));
+			this.props.setJ(parseInt(text.split(" ")[1]));
 		}
+
+		if(parseInt(text.split(" ")[0]) == 3 && parseInt(text.split(" ")[1]) == 3)
+		this.props.setSolve(true);
 	}
 	builtinRead(x) {
 	    if (Sk.builtinFiles === undefined || Sk.builtinFiles["files"][x] === undefined)
@@ -39,11 +36,9 @@ class LevelSevenInput extends React.Component {
 	    return Sk.builtinFiles["files"][x];
 	}
 	runit() {
-		this.setState({outs: []})
-   var prog = "elevator_working = False\ntake_stairs = None\ntake_elevator = None\n"
-	 prog = prog + this.state.inputVal + "\nprint take_stairs, take_elevator\n";
-	 prog = prog + "elevator_working = True\ntake_stairs = None\ntake_elevator = None\n"
-	 prog = prog + this.state.inputVal + "\nprint take_stairs, take_elevator";
+	 this.setState({outs: []});
+   var prog = "i = 0\nj = 0\ndirection = \"up\"\ndef move_forward():\n    \n    global i\n    global j\n    if (direction == \"up\"):\n        i += 1\n    elif (direction == \"down\"):\n        i -= 1\n    elif (direction == \"right\"):\n        j += 1\n    elif (direction == \"left\"):\n        j -= 1\ndef turn(s):\n    global direction\n    if (s == \"right\" and direction == \"up\"):\n        direction = \"right\"\n    elif (s == \"left\" and direction == \"up\"):\n        direction = \"left\"\n    elif (s == \"right\" and direction == \"right\"):\n        direction = \"down\"\n    elif (s == \"right\" and direction == \"left\"):\n        direction = \"up\"\n    elif (s == \"left\" and direction == \"right\"):\n        diretion = \"up\"\n    elif (s == \"left\" and direction == \"left\"):\n        direction = \"down\"\n"
+	 prog = prog + this.state.inputVal + "\nprint str(i)+\" \"+str(j)\n";
    Sk.pre = "output";
    Sk.configure({output:this.outf, read:this.builtinRead});
 	 try {
