@@ -1,0 +1,19 @@
+html {
+  background-color: black;
+}
+.title {
+  text-align: center;
+  color : blue;
+  font-family: "viner hand ITC";
+}
+h2 {
+  text-align: center;
+  color : red;
+  font-family: "viner hand ITC";
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
