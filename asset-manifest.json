@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/escape-from-avw/static/css/main.7a474204.chunk.css",
+    "main.js": "/escape-from-avw/static/js/main.9f5456f5.chunk.js",
+    "main.js.map": "/escape-from-avw/static/js/main.9f5456f5.chunk.js.map",
+    "runtime-main.js": "/escape-from-avw/static/js/runtime-main.eaf582c0.js",
+    "runtime-main.js.map": "/escape-from-avw/static/js/runtime-main.eaf582c0.js.map",
+    "static/js/2.0624052d.chunk.js": "/escape-from-avw/static/js/2.0624052d.chunk.js",
+    "static/js/2.0624052d.chunk.js.map": "/escape-from-avw/static/js/2.0624052d.chunk.js.map",
+    "index.html": "/escape-from-avw/index.html",
+    "precache-manifest.1c6f69ec2e4e09897f8e0bdb0837f576.js": "/escape-from-avw/precache-manifest.1c6f69ec2e4e09897f8e0bdb0837f576.js",
+    "service-worker.js": "/escape-from-avw/service-worker.js",
+    "static/css/main.7a474204.chunk.css.map": "/escape-from-avw/static/css/main.7a474204.chunk.css.map",
+    "static/js/2.0624052d.chunk.js.LICENSE.txt": "/escape-from-avw/static/js/2.0624052d.chunk.js.LICENSE.txt",
+    "static/media/Door1_Open.png": "/escape-from-avw/static/media/Door1_Open.d94f0120.png",
+    "static/media/DoorSpeakerLocked2.png": "/escape-from-avw/static/media/DoorSpeakerLocked2.dcb9b712.png",
+    "static/media/DoorSpeakerUnlocked2.png": "/escape-from-avw/static/media/DoorSpeakerUnlocked2.60b7a967.png",
+    "static/media/Scale.png": "/escape-from-avw/static/media/Scale.dadd6c6c.png",
+    "static/media/ScaleBalenced.png": "/escape-from-avw/static/media/ScaleBalenced.7e938bbf.png",
+    "static/media/Vending2.png": "/escape-from-avw/static/media/Vending2.26eded9d.png",
+    "static/media/door_three_key.png": "/escape-from-avw/static/media/door_three_key.7f815558.png",
+    "static/media/elevator.png": "/escape-from-avw/static/media/elevator.c87c50d8.png",
+    "static/media/hallway_scene_from_hell.png": "/escape-from-avw/static/media/hallway_scene_from_hell.8a748fae.png",
+    "static/media/hallway_to_hell_pt2.png": "/escape-from-avw/static/media/hallway_to_hell_pt2.07c5f690.png",
+    "static/media/keyholeMessageDoorLocked.png": "/escape-from-avw/static/media/keyholeMessageDoorLocked.a358ddb1.png",
+    "static/media/keyholeMessageDoorUnlocked.png": "/escape-from-avw/static/media/keyholeMessageDoorUnlocked.5e33b1d8.png",
+    "static/media/logo.svg": "/escape-from-avw/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.eaf582c0.js",
+    "static/js/2.0624052d.chunk.js",
+    "static/css/main.7a474204.chunk.css",
+    "static/js/main.9f5456f5.chunk.js"
+  ]
+}
